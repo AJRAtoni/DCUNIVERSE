@@ -279,6 +279,8 @@ function injectStyles() {
             #dynamic-content .container.style2.columns > .wrapper > .inner > div {
                 width: 100% !important;
                 margin-left: 0 !important;
+                padding-top: 1.5rem !important;
+                padding-bottom: 1.5rem !important;
             }
         }
     `;
