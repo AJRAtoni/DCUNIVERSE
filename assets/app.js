@@ -3,7 +3,7 @@ const CONFIG = {
     AIRTABLE: {
         TOKEN: 'patv41n63HLpkM4VN.' + 'bbe008721d08d1e969c3398df4550c53a1704b64ed752cc16ae8060a0bd373b3',
         BASE_ID: 'apphXPfmF1OwvCPWC',
-        TABLE_NAME: 'marveldc',
+        TABLE_NAME: 'eventos',
         FILTER_FIELD: 'Franquicia', // Campo para distinguir (Marvel/DC)
         FILTER_VALUE: 'DC'      // Valor a filtrar para ESTA web
     }
