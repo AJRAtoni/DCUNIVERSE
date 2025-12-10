@@ -77,22 +77,6 @@ async function fetchMovies() {
     }
 }
 
-/**
- * Render mock data if no API key is present
- */
-function getMockData() {
-    return [
-        {
-            fields: {
-                Titulo: "SUPERMAN (MOCK)",
-                Tipo: "PELICULA",
-                FechaEstrenoTexto: "11 JULIO 2025",
-                Imagen: [{ url: "assets/images/image_dc_mock.jpg" }],
-                IMDbURL: "https://www.imdb.com/title/tt1099212/"
-            }
-        }
-    ];
-}
 
 /**
  * Format date string (YYYY-MM-DD) to Spanish format (DD MMMM YYYY)
@@ -272,6 +256,11 @@ function injectStyles() {
         /* Force 2-column layout on Desktop */
         #dynamic-content .container.style2.columns > .wrapper > .inner > div {
             width: calc(50% + (var(--gutters) / 2));
+        }
+
+        /* Uppercase Titles */
+        h2.style1 {
+            text-transform: uppercase !important;
         }
         
         /* Reset for Mobile */
