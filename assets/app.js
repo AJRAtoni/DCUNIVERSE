@@ -258,10 +258,7 @@ function injectStyles() {
             width: calc(50% + (var(--gutters) / 2));
         }
 
-        /* Uppercase Titles */
-        h2.style1 {
-            text-transform: uppercase !important;
-        }
+
         
         /* Reset for Mobile */
         @media (max-width: 736px) {

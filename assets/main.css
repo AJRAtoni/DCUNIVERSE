@@ -905,6 +905,7 @@ p.style1 {
 	font-size: 2.5em;
 	line-height: 1.375;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
 h1.style1 mark,
