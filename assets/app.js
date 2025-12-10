@@ -276,9 +276,11 @@ function injectStyles() {
         
         /* Reset for Mobile */
         @media (max-width: 736px) {
-            #dynamic-content .container.style2.columns > .wrapper > .inner > div {
+            #dynamic-content .container.style2.columns > .wrapper > .inner > * {
                 width: 100% !important;
                 margin-left: 0 !important;
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
                 padding-top: 1.5rem !important;
                 padding-bottom: 1.5rem !important;
             }
