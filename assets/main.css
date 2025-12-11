@@ -334,7 +334,7 @@ unloaded-script {
 	--padding-horizontal: 4rem;
 	--padding-vertical: 4rem;
 	--spacing: 1.75rem;
-	--width: 70rem;
+	--width: 60rem;
 	border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
 	max-width: 100%;
 	position: relative;
@@ -903,7 +903,7 @@ p.style1 {
 	color: #147BEB;
 	font-family: 'Poppins', sans-serif;
 	font-size: 2.5em;
-	line-height: 1.375;
+	line-height: 1;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -944,7 +944,7 @@ p.style4 {
 	color: #1D1D1F;
 	font-family: 'Inter', sans-serif;
 	font-size: 1em;
-	line-height: 1.875;
+	line-height: 1.5;
 	font-weight: 400;
 }
 
@@ -1109,8 +1109,9 @@ p.style4 span.p:nth-child(n + 2) {
 }
 
 .image.style2 .frame {
-	width: 100vw;
-	height: 20rem;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 2 / 3;
 	border-radius: 1rem;
 	box-shadow: 0rem 0rem 0rem 0rem #FFFFFF;
 	transition: none;
@@ -1615,7 +1616,7 @@ p.style4 span.p:nth-child(n + 2) {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 1.75em;
-		line-height: 1.375;
+		line-height: 1;
 	}
 
 	h1.style4,
@@ -1625,7 +1626,7 @@ p.style4 span.p:nth-child(n + 2) {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 1em;
-		line-height: 1.875;
+		line-height: 1.5;
 	}
 
 	.buttons.style1 {
@@ -1651,8 +1652,9 @@ p.style4 span.p:nth-child(n + 2) {
 	}
 
 	.image.style2 .frame {
-		width: 100vw;
-		height: 18.75rem !important;
+		width: 100%;
+		height: auto !important;
+		aspect-ratio: 2 / 3;
 	}
 
 	.image.style2 img {
@@ -1711,7 +1713,8 @@ p.style4 span.p:nth-child(n + 2) {
 
 
 	.image.style2 .frame {
-		height: 15rem !important;
+		height: auto !important;
+		aspect-ratio: 2 / 3;
 	}
 
 	.image.style3 .frame {
@@ -1749,7 +1752,7 @@ p.style4 span.p:nth-child(n + 2) {
 	h2.style1,
 	h3.style1,
 	p.style1 {
-		font-size: 1.75em;
+		font-size: 1em;
 	}
 
 	h1.style4,
@@ -1764,7 +1767,8 @@ p.style4 span.p:nth-child(n + 2) {
 	}
 
 	.image.style2 .frame {
-		height: 13.125rem !important;
+		height: auto !important;
+		aspect-ratio: 2 / 3;
 	}
 
 	.image.style3 .frame {
