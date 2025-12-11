@@ -327,7 +327,7 @@ unloaded-script {
 	position: relative;
 	text-align: var(--alignment);
 	z-index: 1;
-	transition: opacity 0.5s ease 0s, transform 0.5s ease 0s;
+	transition: opacity 1s ease 0s, transform 1s ease 0s;
 }
 
 #main>.inner {

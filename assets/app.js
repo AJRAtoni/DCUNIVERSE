@@ -176,8 +176,8 @@ function createCardMarkup(record, index) {
  * Main Render Function
  */
 async function init() {
-    // const loadingStr = `<div class="style2 container default"><div class="wrapper"><div class="inner"><p style="text-align:center">Cargando próximos estrenos de DC...</p></div></div></div>`;
-    // DOM.container.innerHTML = loadingStr;
+    const loadingStr = `<div class="style2 container default"><div class="wrapper"><div class="inner"><p style="text-align:center">Cargando próximos estrenos de DC...</p></div></div></div>`;
+    DOM.container.innerHTML = loadingStr;
 
     const records = await fetchMovies();
 
