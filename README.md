@@ -52,7 +52,6 @@ DCUNIVERSE/
 
 ## 🎨 Diseño y UX
 
-- **Framework visual:** Carrd (plantilla #style3)
 - **Tipografía:** Inter + Poppins (Google Fonts)
 - **Layout:** Container con ancho máximo, centrado
 - **Cards:** Layout alternado izquierda/derecha
