@@ -50,48 +50,6 @@ DCUNIVERSE/
 
 ---
 
-## 🔄 Flujo de datos
-
-```mermaid
-graph LR
-    A[Usuario visita dc.ajra.es] --> B[Browser carga index.html]
-    B --> C[app.js se ejecuta]
-    C --> D[Airtable API REST]
-    D --> E[Base: apphXPfmF1OwvCPWC]
-    E --> F[Tabla: eventos]
-    F --> G[Filtro: Franquicia = 'DC']
-    G --> H[JSON response]
-    H --> I[Renderizar cards HTML]
-    I --> J[Animaciones al scroll]
-```
-
-### API de Airtable
-
-- **Base ID:** `apphXPfmF1OwvCPWC`
-- **Tabla:** `eventos`
-- **Filtro:** `{Franquicia} = 'DC'`
-- **Orden:** `FechaOrden` ascendente
-- **Campos requeridos:**
-  - `Titulo` — Nombre de la película/serie
-  - `Tipo` — "Película" o "Serie"
-  - `FechaOrden` — Fecha en formato YYYY-MM-DD (para ordenar)
-  - `Imagen` — URL de la imagen/póster
-  - `IMDbURL` — Enlace a IMDb
-- **Campo opcional:**
-  - `FechaEstrenoTexto` — Texto personalizado para mostrar la fecha (ej: "Próximamente", "TBD")
-
-### Autenticación
-
-El token de Airtable está **obfuscado** mediante concatenación de strings en `app.js` (línea 4):
-
-```javascript
-TOKEN: 'patv41n63HLpkM4VN.' + 'bbe008721d08d1e969c3398df4550c53a1704b64ed752cc16ae8060a0bd373b3'
-```
-
-Esto es una medida básica de ocultación, **NO es seguridad**. El token tiene permisos de solo lectura en la tabla específica.
-
----
-
 ## 🎨 Diseño y UX
 
 - **Framework visual:** Carrd (plantilla #style3)
